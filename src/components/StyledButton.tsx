@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components' //biblioteca para escrever css no js
 import { ButtonProps } from '@/types'
 import { pxToRem } from '@/utils'
 
