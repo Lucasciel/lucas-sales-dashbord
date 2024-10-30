@@ -1,5 +1,6 @@
 export { default as FormComponent } from './FormComponent'
 export { default as AvatarsList } from './AvatarList'
+export { default as CustomTable } from './CustomTable'
 export * from './BannerImage'
 export * from './StyledButton'
 export * from './StyledInput'
