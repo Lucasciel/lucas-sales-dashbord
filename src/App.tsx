@@ -11,11 +11,11 @@ import { Login, Registration, Home, Leads, Profile } from './pages'
 
 function App() {
   const ProtectedRoute = () => {
-    const checkAuthCookie = Cookies.get('Authorization')
+    /*const checkAuthCookie = Cookies.get('Authorization')
     if (!checkAuthCookie) {
       alert('Autenticação necessária')
       return <Navigate to="/" replace />
-    }
+    }*/
 
     return <Outlet />
   }
