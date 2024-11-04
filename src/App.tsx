@@ -2,10 +2,11 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate,
+  //Navigate,
   Outlet,
 } from 'react-router-dom'
-import Cookies from 'js-cookie'
+
+// import Cookies from 'js-cookie'
 //Pages
 import { Login, Registration, Home, Leads, Profile } from './pages'
 
