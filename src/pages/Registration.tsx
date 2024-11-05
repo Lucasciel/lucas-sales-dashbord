@@ -1,61 +1,19 @@
-import { Grid, Box, Container } from '@mui/material'
-import {
-  BannerImage,
-  FormComponent,
-  StyledH1,
-  StyledP,
-  StyledUl,
-} from '@/components'
-import { pxToRem } from '@/utils'
+import styled from 'styled-components'
 
+const RegistrationArea = styled.div`
+  background: #666;
+`
+const RegistrationImage = styled.div`
+  background-image: url(/login-image.svg);
+  background-size: cover;
+  height: 100vh;
+  width: 50vw;
+`
 function Registration() {
   return (
     <>
-      <Box>
-        <Grid container>
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            sx={{ alignItems: 'center', display: 'flex', height: '100vh' }}
-          >
-            <Container maxWidth="sm">
-              <Box sx={{ marginBottom: pxToRem(24) }}>
-                <StyledH1>Faça seu cadastro</StyledH1>
-                <StyledP>Primeiro, diga-nos quem você é</StyledP>
-                <StyledUl>
-                  <li>Entre 8 e 16 caracteres;</li>
-                  <li>Pelo menos uma letra maiúscula;</li>
-                  <li>Pelo menos um caractere especial.</li>
-                  <li>Pelo menos um número</li>
-                </StyledUl>
-              </Box>
-
-              <FormComponent
-                input={[
-                  { type: 'email', placeholder: 'Email' },
-                  { type: 'password', placeholder: 'Senha' },
-                ]}
-                buttons={[
-                  {
-                    className: 'primary',
-                    type: 'submit',
-                    children: 'Login',
-                  },
-                ]}
-                message={{
-                  msg: 'Erro!!',
-                  type: 'error',
-                }}
-              />
-            </Container>
-          </Grid>
-
-          <Grid item sm={6} sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <BannerImage />
-          </Grid>
-        </Grid>
-      </Box>
+      <RegistrationArea>Registration</RegistrationArea>
+      <RegistrationImage />
     </>
   )
 }
