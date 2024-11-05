@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { CardComponent, StyledButton, StyledH2 } from '@/components'
+import { CardComponent, StyledButton, StyledH2, Header } from '@/components'
 import { AppThemeContext } from '@/contexts/AppThemeContext'
 
 // MUI
@@ -13,6 +13,7 @@ function Profile() {
   const themeContext = useContext(AppThemeContext)
   return (
     <>
+      <Header />
       <Container className="mb-2" maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6}>

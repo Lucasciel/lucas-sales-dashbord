@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
+import { Logo } from '@/components'
+
 // MUI
 import Avatar from '@mui/material/Avatar'
 import Box from '@mui/material/Box'
@@ -28,11 +30,13 @@ function Header() {
             height: pxToRem(64),
           }}
         >
-          <Link to="/home"></Link>
+          <Link to="/home">
+            <Logo height={30} width={73} />
+          </Link>
           <Link to="/perfil">
             <Avatar
               alt="DNC Avatar"
-              src="/dnc-avatar.jpg"
+              src="/dnc-avatar.svg"
               sx={{ width: pxToRem(40), height: pxToRem(40) }}
             />
           </Link>
