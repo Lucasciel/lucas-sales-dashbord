@@ -1,9 +1,5 @@
 function Leads() {
-  return (
-    <>
-      <h1>leads</h1>
-    </>
-  )
+  return <></>
 }
 
 export default Leads
