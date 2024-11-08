@@ -5,7 +5,6 @@ export interface Theme {
   appLogo: string
   appSkeletonFrom: string
   appSkeletonTo: string
-  disabledBackground?: string
   buttons: {
     alert: string
     alertColor: string
