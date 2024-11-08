@@ -26,9 +26,9 @@ export interface Theme {
     active: string
     activeColor: string
     borderColor: string
-    disabledBackground: string
-    disabledColor: string
+    disabled: string
     disabledBorderColor: string
+    disabledColor: string
     placeholderColor: string
   }
   typographies: {
